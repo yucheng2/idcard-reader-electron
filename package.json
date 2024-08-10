@@ -13,9 +13,10 @@
   "author": "ywReader",
   "license": "ISC",
   "dependencies": {
+    "@yuuang/ffi-rs-win32-ia32-msvc": "^1.0.89",
     "electron-squirrel-startup": "^1.0.0",
-    "ffi-napi": "^4.0.2",
-    "iconv": "^3.0.0",
+    "ffi-rs": "^1.0.89",
+    "iconv-lite": "^0.6.3",
     "socket.io": "^3.1.2"
   },
   "devDependencies": {

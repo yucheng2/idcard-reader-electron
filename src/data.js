@@ -1,5 +1,4 @@
-const Iconv  = require('iconv').Iconv;
-const iconv = new Iconv('GBK', 'UTF-8');
+const iconv  = require('iconv-lite')
 
 function makeData(num = 192){
     let data = Buffer.alloc(num);
@@ -9,7 +8,7 @@ function makeData(num = 192){
 }
 
 function data2String(data){
-    return iconv.convert(data).toString().replace(/\x00/g,'')
+    return iconv.decode(data, 'GBK').toString().replace(/\x00/g,'')
 }
 
 module.exports = {
